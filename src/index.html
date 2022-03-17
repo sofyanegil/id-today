@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Today</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-50">
+      <app-bar></app-bar>
+      <nav id="drawer-nav">
+        <button class="btn-portal" value="antara">Antara</button>
+        <button class="btn-portal" value="jpnn">JPNN</button>
+        <button class="btn-portal" value="kumparan">Kumparan</button>
+        <button class="btn-portal" value="okezone">OkZone</button>
+        <button class="btn-portal" value="republika">Republika</button>
+        <button class="btn-portal" value="sindonews">SindoNews</button>
+        <button class="btn-portal" value="suara">Suara</button>
+        <button class="btn-portal" value="tribun">Tribun</button>
+      </nav>
+    </header>
+    <main class="relative">
+      <div class="flex justify-center gap-3 flex-wrap my-5" id="list-btn">
+        <btn-portal value="antara" name="Antara"></btn-portal>
+        <btn-portal value="jpnn" name="JPNN"></btn-portal>
+        <btn-portal value="kumparan" name="Kumparan"></btn-portal>
+        <btn-portal value="okezone" name="OkZone"></btn-portal>
+        <btn-portal value="republika" name="Republika"></btn-portal>
+        <btn-portal value="sindonews" name="SindoNews"></btn-portal>
+        <btn-portal value="suara" name="Suara"></btn-portal>
+        <btn-portal value="tribun" name="Tribun"></btn-portal>
+      </div>
+      <hr />
+      <img id="today-news" class="mx-auto h-20 w-80 my-5 border-0" />
+      <news-list class="today-list flex flex-wrap justify-center gap-2"> </news-list>
+    </main>
+    <footer class="w-full bg-slate-800 text-center py-5">
+      <bottom-bar></bottom-bar>
+    </footer>
+    <button id="top-btn" title="Go to top" class="fixed bottom-6 right-8 z-50 border-none outline-none bg-yellow-500 text-white cursor-pointer p-4 rounded-md hover:bg-yellow-600">&#8593;</button>
+  </body>
+</html>
