@@ -19,7 +19,7 @@ class NewsItem extends HTMLElement {
   render() {
     this.innerHTML = `
         <p class="absolute bg-opacity-70 bg-black p-2 rounded-tl-xl text-white text-bold">${this.generateDate(this._news.pubDate)}</p>
-        <img class="w-full max-h-30" src="${this._news.thumbnail}" alt="${this._news.title}" />
+        <img loading="lazy" class="w-full max-h-30" src="${this._news.thumbnail}" alt="${this._news.title}" />
         <div class="p-2 bg-slate-100">
           <h1 class="text-xl font-bold">${this._news.title}</h1>
           <p class="text-sm text-justify">${this.generateDesc(this._news.description)}</p>
