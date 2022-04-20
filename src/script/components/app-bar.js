@@ -1,8 +1,10 @@
-import logo from '../../images/logo.svg';
+import logo from '../../public/images/logo.svg';
+
 class AppBar extends HTMLElement {
   connectedCallback() {
     this.render();
   }
+
   render() {
     this.innerHTML = `
     <div class="w-100 bg-slate-900 flex sm:justify-start md:justify-center py-3 sticky items-center">

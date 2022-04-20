@@ -4,6 +4,7 @@ class ButtonPortal extends HTMLElement {
     this.name = this.getAttribute('name' || null);
     this.render();
   }
+
   render() {
     this.innerHTML = `
     <button class="btn-portal bg-sky-500 hover:bg-sky-800  px-5 py-2 rounded-full text-white font-semibold" value="${this.value}">${this.name}</button>`;

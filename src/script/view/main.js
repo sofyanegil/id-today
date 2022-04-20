@@ -3,6 +3,7 @@ import '../components/button-portal';
 import '../components/news-list';
 import './event';
 import DataNews from '../data/data-news';
+
 const main = () => {
   const renderResult = (results) => {
     $('news-list')[0].kabar = results.data;

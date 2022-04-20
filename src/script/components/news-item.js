@@ -1,10 +1,13 @@
-import logo from '../../images/logo.svg';
+/* eslint-disable class-methods-use-this */
+import logo from '../../public/images/logo.svg';
+
 class NewsItem extends HTMLElement {
   set news(news) {
     this._news = news;
     this.setAttribute('class', 'card sm:basis-full md:basis-1/2 lg:basis-1/5 rounded-xl overflow-hidden shadow-md shadow-slate-600 m-3 border-1 border-slate-400');
     this.render();
   }
+
   generateDate(date) {
     return new Date(date).toLocaleString('id-ID', {
       day: 'numeric',
@@ -13,9 +16,11 @@ class NewsItem extends HTMLElement {
       minute: '2-digit',
     });
   }
+
   generateDesc(desc) {
     return desc !== '' ? `${desc.substring(0, 200)}...` : '';
   }
+
   render() {
     this.innerHTML = `
         <p class="absolute bg-opacity-70 bg-black p-2 rounded-tl-xl text-white text-bold">${this.generateDate(this._news.pubDate)}</p>

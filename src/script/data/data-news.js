@@ -1,4 +1,5 @@
 import $ from 'jquery';
+
 class DataNews {
   static getNews(portal) {
     return $.ajax({

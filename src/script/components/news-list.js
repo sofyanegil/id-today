@@ -1,10 +1,12 @@
 import $ from 'jquery';
 import './news-item';
+
 class NewsList extends HTMLElement {
   set kabar(kabar) {
     this._kabar = kabar;
     this.render();
   }
+
   render() {
     $('#today-news').attr('src', this._kabar.image);
     this.innerHTML = '';
