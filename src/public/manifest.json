@@ -1,8 +1,8 @@
 {
   "name": "Id Today",
   "short_name": "Id Today",
-  "theme_color": "#fff",
-  "background_color": "#fff",
+  "theme_color": "#000",
+  "background_color": "#000",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/index.html",
